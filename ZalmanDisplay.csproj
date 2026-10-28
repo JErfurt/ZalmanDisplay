@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>false</SelfContained>
+    <!-- Меньше памяти и фоновых потоков рантайма -->
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <ServerGarbageCollection>false</ServerGarbageCollection>
+    <ConcurrentGarbageCollection>false</ConcurrentGarbageCollection>
+    <UseSystemResourceKeys>true</UseSystemResourceKeys>
+    <TieredPGO>true</TieredPGO>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HidSharp" Version="2.6.4" />
+    <PackageReference Include="LibreHardwareMonitorLib" Version="0.9.6" />
+  </ItemGroup>
+
+</Project>

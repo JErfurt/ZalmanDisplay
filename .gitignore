@@ -1,0 +1,16 @@
+# Сборка
+bin/
+obj/
+publish/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+
+# Логи и дампы пробных запусков
+*.log
+profile.txt
+sensors.txt
